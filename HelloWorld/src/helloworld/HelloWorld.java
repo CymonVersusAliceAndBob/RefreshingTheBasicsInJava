@@ -5,6 +5,8 @@
  */
 package helloworld;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Markus
@@ -15,8 +17,9 @@ public class HelloWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Hello, world!");
+        Scanner scan = new Scanner(System.in);
+        String input = scan.nextLine();
+        System.out.println("Hello, World.\n" + input);
     }
     
 }
